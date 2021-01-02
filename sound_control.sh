@@ -29,12 +29,12 @@ soundControlMenu() {
 
 increaseSound() {
     amixer set Master 10%+
-    menuSatu
+    soundControlMenu
 }
 
 decreaseSound() {
     amixer set Master 10%-
-    menuSatu
+    soundControlMenu
 }
 
 playMusic() {
@@ -42,7 +42,7 @@ playMusic() {
         wget https://file-examples-com.github.io/uploads/2017/11/file_example_WAV_1MG.wav
     fi
     aplay file_example_WAV_1MG.wav
-    menuSatu
+    soundControlMenu
 }
 
 main() {
