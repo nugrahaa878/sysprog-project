@@ -1,6 +1,7 @@
 #!/bin/bash
 
-menuSatu() {
+soundControlMenu() {
+    printf "[Welcome to Sound Control by MIA]"
     printf "=========================== \n         MAIN MENU\n===========================\n"
     printf "1. Increase Volume\n"
     printf "2. Decrease Volume\n"
@@ -45,7 +46,7 @@ playMusic() {
 }
 
 main() {
-    menuSatu
+    soundControlMenu
 }
 
 main
