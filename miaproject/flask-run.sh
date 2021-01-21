@@ -9,8 +9,9 @@
 case "$1" in 
  start)
 echo "App is running..."
+export FLASK_ENV=development
 export FLASK_APP=./WebInterface.py
-export FLASK_RUN_HOST='0.0.0.0'
+export FLASK_RUN_HOST='127.0.0.1'
 flask run
 ;;
  *)
